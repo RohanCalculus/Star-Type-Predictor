@@ -35,7 +35,7 @@ def post_pred(sp: StarProperties):
 # uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 
 '''
-Test on:- 
+Test on Real Star Data Taken from Wikipedia:- 
 Betelgeuse (Supergiant) ~ https://en.wikipedia.org/wiki/Betelgeuse
 Beta Pictoris (Main Seq) ~ https://en.wikipedia.org/wiki/Beta_Pictoris
 Sirus (White Dwarf) ~ https://en.wikipedia.org/wiki/Sirius
