@@ -1,9 +1,9 @@
-# Star Type Prediction API
+# 🌟 Star Type Prediction API 🌠
 
 🔸 Welcome to the Star Type Prediction API! This project deploys a Logistic Regression model as an API using FastAPI.<br>
 🔸 The model takes in various star properties as input and returns the predicted star type along with its confidence score.<br>
 
-## Setup
+## ⚙️ Setup
 Follow these steps to set up the project on your local machine:
 1. **Clone the Repository:**
 ```
@@ -20,7 +20,7 @@ conda activate venve-name
 pip install -r requirements.txt
 ```
 
-## Running the App
+## 💻 Running the App
 1. **Run the FastAPI App:**
 ```
 uvicorn api:app --host YOUR_IP --port YOUR_PORT --reload
@@ -31,7 +31,7 @@ Replace `YOUR_IP` and `YOUR_PORT` with the desired IP address and port number.
 🔸 Open your web browser and navigate to `http://YOUR_IP:YOUR_PORT/docs` to access the Swagger UI.<br>
 🔸 Here, you can interact with the API, input star properties, and receive predictions.
 
-## Example of Request and Response bodies via Swagger UI
+## ✨ Example of Request and Response bodies via Swagger UI
 
 🔸 **Request body:-**
 ```
@@ -59,7 +59,7 @@ Replace `YOUR_IP` and `YOUR_PORT` with the desired IP address and port number.
 }
 ```
 
-## Project Structure
+## 📁 Project Structure
 🔸 **api.py:** FastAPI application defining the API endpoints.<br>
 🔸 **ml_star_type_prediction.ipynb:** Jupyter Notebook used for training the Logistic Regression model and saving it as model.pkl.<br>
 🔸 **model.pkl:** Serialized trained model for star type prediction.<br>
@@ -68,9 +68,8 @@ Replace `YOUR_IP` and `YOUR_PORT` with the desired IP address and port number.
 🔸 **star_properties.py:** Pydantic BaseModel and Field definitions for star properties along with set examples.<br>
 🔸 **star_type_data.csv:** Dataset used for training the model.<br>
 
-## Contribute/Queries/Suggestions
+## 🤝 Contribute/Queries/Suggestions
 🔸 Feel free to explore and contribute to this project.<br>
-🔸 If you have any questions or suggestions, please create an issue or reach out to me via rohan.calculus@gmail.com
-🔸 If you find this project helpful, consider giving it a star! ⭐️ (A star for a Star Type Predictor! :D)
-
-🌟 **Happy Star Type Prediction!** 🌌
+🔸 If you have any questions or suggestions, please create an issue or reach out to me via rohan.calculus@gmail.com<br>
+🔸 If you find this project helpful, consider giving it a star! **(A star for a Star Type Predictor?)** ⭐️<br>
+🔸 **Happy Star Type Prediction!** 🌌
