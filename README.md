@@ -1,7 +1,7 @@
 # 🌟 Star Type Prediction API 🌠
 
-🔸 Welcome to the Star Type Prediction API! This project deploys a Logistic Regression model as an API using FastAPI.<br>
-🔸 The model takes in various star properties as input and returns the predicted star type along with its confidence score.<br>
+🔸 Welcome to the Star Type Prediction API!<br>
+🔸 This project deploys a Logistic Regression model as an API using FastAPI.
 
 ## ⚙️ Setup
 Follow these steps to set up the project on your local machine:
@@ -61,7 +61,7 @@ Replace `YOUR_IP` and `YOUR_PORT` with the desired IP address and port number.
 
 ## 📁 Project Structure
 🔸 **api.py:** FastAPI application defining the API endpoints.<br>
-🔸 **ml_star_type_prediction.ipynb:** Jupyter Notebook used for training the Logistic Regression model and saving it as model.pkl.<br>
+🔸 **ml_star_type_prediction.ipynb:** Jupyter Notebook used for training the model and saving it as model.pkl.<br>
 🔸 **model.pkl:** Serialized trained model for star type prediction.<br>
 🔸 **predictor.py:** Module containing functions to load the model and make predictions.<br>
 🔸 **requirements.txt:** List of Python dependencies for the project.<br>
