@@ -32,7 +32,7 @@ def post_pred(sp: StarProperties):
             'predicted_class':pred,
             'confidence': confidence}
 
-# uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+# uvicorn api:app --host 127.0.0.1 --port 8000 --reload
 
 '''
 Test on Real Star Data Taken from Wikipedia:- 
