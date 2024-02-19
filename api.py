@@ -1,8 +1,10 @@
 # Libraries
 from fastapi import FastAPI
-from star_properties import StarProperties
+from star_properties import StarProperties, StarTypePrediction
 from predictor import load_model, make_prediction
 import numpy as np
+from typing import Dict, Any
+
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -19,8 +21,8 @@ def index_route():
 
 # Define a route for handling POST requests to the "/predict" endpoint
 # The route takes in a StarProperties object as input, which is expected to be sent in the request body
-@app.post('/predict')
-def post_pred(sp: StarProperties):
+@app.post('/prediction', response_model=StarTypePrediction)
+def prediction(sp: StarProperties):
     # Extract features from the StarProperties object
     features = [sp.temperature, sp.luminosity, sp.radius, sp.abs_mag]
     # Make a prediction using the loaded machine learning model
@@ -30,7 +32,7 @@ def post_pred(sp: StarProperties):
     # Return the predicted probabilities, predicted class, and confidence in the response
     return {'predicted_probabilities': dict(zip(classes, prob)), 
             'predicted_class':pred,
-            'confidence': confidence}
+            'confidence_score': confidence}
 
 # uvicorn api:app --host 127.0.0.1 --port 8000 --reload
 
