@@ -1,6 +1,6 @@
 # Libraries
 from fastapi import FastAPI
-from star_properties import StarProperties, StarTypePrediction
+from star_request_response import StarProperties, StarTypePrediction
 from predictor import load_model, make_prediction
 import numpy as np
 from typing import Dict, Any
