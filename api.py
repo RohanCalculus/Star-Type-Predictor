@@ -26,13 +26,13 @@ def prediction(sp: StarProperties):
     # Extract features from the StarProperties object
     features = [sp.temperature, sp.luminosity, sp.radius, sp.abs_mag]
     # Make a prediction using the loaded machine learning model
-    pred, prob, classes = make_prediction(model, features)
+    pred_class, prob, classes = make_prediction(model, features)
     # Calculate the confidence level of the prediction
-    confidence = f'{round(np.max(prob)*100, 1)}%'
+    confidence_score = f'{round(np.max(prob)*100, 1)}%'
     # Return the predicted probabilities, predicted class, and confidence in the response
     return {'predicted_probabilities': dict(zip(classes, prob)), 
-            'predicted_class':pred,
-            'confidence_score': confidence}
+            'predicted_class':pred_class,
+            'confidence_score': confidence_score}
 
 # uvicorn api:app --host 127.0.0.1 --port 8000 --reload
 
