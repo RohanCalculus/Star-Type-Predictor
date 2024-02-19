@@ -65,8 +65,8 @@ Replace `YOUR_IP` and `YOUR_PORT` with the desired IP address and port number.
 🔸 **model.pkl:** Serialized trained model for star type prediction.<br>
 🔸 **predictor.py:** Module containing functions to load the model and make predictions.<br>
 🔸 **requirements.txt:** List of Python dependencies for the project.<br>
-🔸 **star_properties.py:** Pydantic BaseModel and Field definitions for star properties along with set examples.<br>
-🔸 **star_type_data.csv:** Dataset used for training the model.<br>
+🔸 **star_request_response.py:** Pydantic BaseModel and Field definitions along with set examples.<br>
+🔸 **star_type_.csv:** Dataset used for training the model.<br>
 
 ## 🤝 Contribute/Queries/Suggestions
 🔸 Feel free to explore and contribute to this project.<br>
